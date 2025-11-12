@@ -4,15 +4,26 @@
 >
   <label>
     Your name:
-    <input type="text" name="name">
+   <input type="text" placeholder="Your Name" required>
   </label>
   
-  <input type="text" placeholder="Your Phone Number" required>
-  
+  <label>
+    Your Phone Number:
+  <input type="number" placeholder="Your Phone Number" required>
+    </label>
+
   <label>
     Pick-Up OR Delivery (on campus)
+    <input type="text" id="deliveryLocation" placeholder="Your location on campus" style="display:none;">
     <textarea name="message"></textarea>
+  </label>
+  
+  <label>
+Any additional notes or special requests?
+      <textarea id="additionalNotes" placeholder="Any additional notes or special requests?" rows="3"></textarea>
   </label>
 
   <button type="submit">Confirm Order</button>
 </form>
+
+    
